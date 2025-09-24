@@ -12,4 +12,6 @@ User_registration
     Create Session    my    ${base_url}
     ${body}=    Create Dictionary     email=eve.holt@reqres.in    password=pistol    name=yusuf
     ${header}=    Create Dictionary    Content-Type=application/json
-    Post Request   my     /posts       data=${body}     headers=${header}
+    ${response}=  Post Request   my     /posts       data=${body}     headers=${header}
+    Log To Console    ${response.status_code}
+    Log To Console    ${response.content}
