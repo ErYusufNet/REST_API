@@ -7,6 +7,7 @@ ${url}    http://api.weatherapi.com/v1
 ${key}    0659d8cba83942e780c103506252309
 ${city}   Helsinki
 
+
 *** Test Cases ***
 Get_weatherInfo
     Create Session    my    ${url}
@@ -22,4 +23,4 @@ Get_weatherInfo
     ${contentTypeValue}=    Get From Dictionary     ${response.headers}    Content-Type
     Should Be Equal    ${contentTypeValue}    application/json
     Log To Console    "Hello this is the value" ${contentTypeValue}
-    
+
