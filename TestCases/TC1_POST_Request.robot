@@ -7,6 +7,7 @@ Library    Collections
 ${base_url}=    https://jsonplaceholder.typicode.com/posts
 
 
+
 *** Test Cases ***
 User_registration
     Create Session    my    ${base_url}
