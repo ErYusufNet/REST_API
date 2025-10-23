@@ -12,6 +12,7 @@ Library    Collections
 ${base_url}=    https://jsonplaceholder.typicode.com/posts
 
 
+
 *** Test Cases ***
 # This test case simulates a user registration process.
 # It sends a POST request with user details and checks the response.
